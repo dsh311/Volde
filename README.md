@@ -3,7 +3,9 @@
   <img src="https://github.com/dsh311/Volde/blob/main/docs/Volde.gif" alt="Volde" width="700"/>
 </p>
 
-**Volde** is a runtime introspection and analysis toolkit for exploring the internal behavior of running processes. *The code for Volde is not included at this time; this repository serves as a research and demonstration project.*
+**Volde** is a runtime introspection and analysis toolkit for exploring the internal behavior of running processes. *The code for Volde is not included at this time; this repository serves as a research and demonstration project.*  
+
+Volde leverages AI to enhance its runtime analysis and experimentation capabilities, providing smarter insights and more flexible automation within live processes.
 
 It is a research project focused on runtime introspection, reverse engineering techniques, and scripting-driven experimentation within a live process.
 

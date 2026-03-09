@@ -1,6 +1,6 @@
 # Volde
 <p align="center">
-  <img src="https://github.com/dsh311/Volde/blob/main/docs/Volde.png" alt="Volde" width="600"/>
+  <img src="https://github.com/dsh311/Volde/blob/main/docs/Volde.gif" alt="Volde" width="700"/>
 </p>
 
 **Volde** is a runtime introspection and analysis toolkit for exploring the internal behavior of running processes.

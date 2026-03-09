@@ -3,9 +3,9 @@
   <img src="https://github.com/dsh311/Volde/blob/main/docs/Volde.gif" alt="Volde" width="700"/>
 </p>
 
-**Volde** is a runtime introspection and analysis toolkit for exploring the internal behavior of running processes. *The code for Volde is not included at this time; this repository serves as a research and demonstration project.*  
+**Volde** is a runtime introspection and analysis toolkit for exploring the internal behavior of running processes. *The code for Volde is not included at this time; this repository serves as a research and demonstration project.*
 
-Volde leverages AI to enhance its runtime analysis and experimentation capabilities, providing smarter insights and more flexible automation within live processes.
+Volde leverages AI to enhance runtime analysis and experimentation capabilities, providing automated insights, assisting with disassembly interpretation, and helping construct dynamic function calls during live process exploration.
 
 It is a research project focused on runtime introspection, reverse engineering techniques, and scripting-driven experimentation within a live process.
 
@@ -21,6 +21,8 @@ Volde is implemented as a dynamically loaded library (DLL) that, once loaded int
 
 Modern software security research often requires visibility into the internal state of running applications. **Volde** explores how a dynamically loaded analysis toolkit can provide runtime visibility, scripting capabilities, and low-level inspection tools directly inside a process.
 
+Volde integrates AI-assisted analysis to help researchers interpret disassembled code, construct runtime function calls, and automate analysis workflows during live experimentation.
+
 Volde provides capabilities for:
 
 - Process module inspection  
@@ -28,9 +30,10 @@ Volde provides capabilities for:
 - Function disassembly  
 - Runtime function invocation  
 - Embedded scripting  
-- .NET runtime hosting
+- .NET runtime hosting  
+- AI-assisted analysis and automation
 
-The project explores how flexible runtime analysis tooling can be built by combining native code, scripting environments, and runtime instrumentation techniques.
+The project explores how flexible runtime analysis tooling can be built by combining native code, scripting environments, runtime instrumentation techniques, and AI-assisted analysis.
 
 ---
 
@@ -46,8 +49,8 @@ Volde presents a graphical interface within the host process, allowing researche
 
 Enumerates all modules loaded within the current process, providing visibility into:
 
-- Loaded DLLs
-- Module base addresses
+- Loaded DLLs  
+- Module base addresses  
 - Module metadata
 
 ---
@@ -62,9 +65,11 @@ Volde can enumerate exported functions for loaded modules, enabling quick inspec
 
 Exported functions can be disassembled using the **Zydis** disassembly engine, allowing low-level inspection of:
 
-- Assembly instructions
-- Function structure
+- Assembly instructions  
+- Function structure  
 - Control flow
+
+AI assistance can help interpret disassembled functions by analyzing instruction sequences and providing contextual explanations of potential function behavior.
 
 ---
 
@@ -75,7 +80,7 @@ Volde supports dynamic invocation of arbitrary functions at runtime using:
 - **Lua scripting**
 - **libffi** for foreign function interface support
 
-This allows researchers to experiment with calling functions dynamically without compiling additional code.
+AI can assist in constructing the required FFI signatures and argument structures, helping researchers invoke discovered functions directly from Lua scripts without manually defining complex calling conventions.
 
 ---
 
@@ -85,10 +90,12 @@ Lua is embedded into Volde to provide a flexible scripting environment for autom
 
 Example use cases include:
 
-- Automating function calls
-- Inspecting memory structures
-- Rapid prototyping of runtime experiments
+- Automating function calls  
+- Inspecting memory structures  
+- Rapid prototyping of runtime experiments  
 - Driving analysis workflows
+
+AI-assisted scripting can further accelerate experimentation by generating Lua scripts or assisting with runtime analysis tasks.
 
 ---
 
@@ -118,12 +125,13 @@ This enables managed assemblies to be loaded directly into the host process and 
 
 Volde was developed to explore several areas relevant to software security research and reverse engineering:
 
-- Runtime program analysis
-- Process introspection
-- Binary disassembly
-- Dynamic function invocation
-- Scripting-driven experimentation
-- Native and managed runtime interoperability
+- Runtime program analysis  
+- Process introspection  
+- Binary disassembly  
+- Dynamic function invocation  
+- Scripting-driven experimentation  
+- Native and managed runtime interoperability  
+- AI-assisted reverse engineering workflows
 
 ---
 
@@ -135,14 +143,16 @@ A typical workflow when using Volde might involve:
 2. Inspecting loaded modules within the process.
 3. Enumerating exported functions from a module.
 4. Disassembling selected functions to analyze behavior.
-5. Using Lua scripts to call functions or automate analysis tasks.
-6. Loading managed assemblies through the embedded .NET runtime for further experimentation.
+5. Using AI assistance to help interpret the disassembled function and understand its behavior.
+6. Using AI to construct FFI signatures and Lua scripts to invoke the function dynamically.
+7. Executing the function through Lua using **libffi**.
+8. Loading managed assemblies through the embedded .NET runtime for further experimentation.
 
 ---
 
 # Project Status
 
-Volde is a **research prototype** created for experimentation and learning. The project demonstrates how runtime analysis tooling can be built by combining native code, scripting environments, and disassembly libraries.
+Volde is a **research prototype** created for experimentation and learning. The project demonstrates how runtime analysis tooling can be built by combining native code, scripting environments, disassembly libraries, and AI-assisted analysis techniques.
 
 ---
 

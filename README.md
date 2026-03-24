@@ -3,6 +3,8 @@
   <img src="https://github.com/dsh311/Volde/blob/main/docs/Volde.gif" alt="Volde" width="700"/>
 </p>
 
+In a world that is moving toward high-level abstractions where no one cares about 'runtime behavior,' this toolkit for internal introspection becomes a counter-cultural tool. **Volde** leverages native C++, Lua scripting, and the Zydis disassembly engine to provide deep-tissue analysis of live Windows processes.
+
 **Volde** is a runtime introspection and analysis toolkit for exploring the internal behavior of running processes. *The code for Volde is not included at this time; this repository serves as a research and demonstration project.*
 
 Volde leverages AI to enhance runtime analysis and experimentation capabilities, providing automated insights, assisting with disassembly interpretation, and helping construct dynamic function calls during live process exploration.
